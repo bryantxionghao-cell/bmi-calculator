@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #2E7D6E, #1B4D6B);
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 6px 0;
+  color: #1B4D6B;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  margin: 0 0 24px 0;
+  color: #667;
+  font-size: 0.92rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1.5px solid #d7dde3;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2E7D6E;
+}
+
+button {
+  margin-top: 22px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2E7D6E;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #24685c;
+}
+
+.result {
+  margin-top: 22px;
+  min-height: 20px;
+}
+
+.result.visible {
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #f2f7f6;
+}
+
+.result .bmi-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1B4D6B;
+}
+
+.result .bmi-category {
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.result .bmi-status {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #dfe7e5;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.category-underweight { color: #d97706; }
+.category-normal { color: #2E7D6E; }
+.category-overweight { color: #d97706; }
+.category-obese { color: #d64545; }
+
+.error {
+  margin-top: 22px;
+  color: #d64545;
+  font-size: 0.9rem;
+}
